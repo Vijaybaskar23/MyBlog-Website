@@ -1,0 +1,356 @@
+/*  Reset & base */
+* { 
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box; 
+}
+
+html, body, #root { 
+  height: 100%; 
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222222;
+  background: #f6f8fb;
+  overflow-x: hidden;   /* no left-right movement */
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  background: black;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo (left) */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  font-size: 24px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.logo-img {
+  width: 80px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Right side → Search + Links */
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Search */
+.search-form {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.search-form input {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.search-form button {
+  padding: 6px 10px;
+  border: none;
+  background: #2575fc;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.search-form button:hover {
+  background: #ae96c8;
+}
+
+/* Links */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+.nav-links a:hover {
+  color: #749de4;
+}
+
+/* ================= HOME PAGE ================= */
+.home-container {
+  min-height: calc(100vh - 64px);   /* full height minus navbar */
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: #fff;
+  display: grid;
+  place-items: center;
+}
+.home-center { 
+  text-align: center; 
+  padding: 40px 0; 
+}
+.title { 
+  font-size: clamp(2rem, 4vw, 3rem); 
+  font-weight: 800; 
+  margin-bottom: 8px; 
+}
+.subtitle { 
+  font-size: 1.2rem; 
+  opacity: .95; 
+  margin-bottom: 28px; 
+}
+
+/* Category buttons */
+.categories {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.category-btn {
+  background: #ffffffe8;   /* white button */
+  color: #000;
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(0,0,0,.18);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.category-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,0,0,.24);
+}
+
+/* ================= INNER PAGES ================= */
+.page {
+  padding: 60px 0 64px;
+}
+.page-title {
+  text-align: center;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+
+/* Responsive card grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+}
+
+/* Card component */
+.card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 26px rgba(0,0,0,.12);
+  display: flex;
+  flex-direction: column;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.card:hover { 
+  transform: translateY(-6px); 
+  box-shadow: 0 16px 36px rgba(0,0,0,.18); 
+}
+
+.card-media img {
+  display: block;
+  width: 100%;
+  height: 225px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 14px 16px 16px;
+  display: grid;
+  gap: 20px;
+}
+.card-title { font-size: 1.1rem; font-weight: 800; }
+.card-desc { color: #555; line-height: 1.45; min-height: 44px; }
+
+.card-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4px;
+}
+.price {
+  color: #0b8a2b;
+  font-weight: 800;
+  font-size: 1rem;
+}
+.btn {
+  border: 0;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: #2575fc;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  transition: filter .15s ease;
+}
+.btn:hover { filter: brightness(1.05); }
+
+/* ================= ABOUT PAGE ================= */
+.about-copy {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+  color: black;
+  line-height: 1.6;
+}
+
+
+/* ========== For About Page And Content ========== */
+
+.about-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+  color: #222;
+  line-height: 1.6;
+}
+
+.mission-section,
+.author-card,
+.values-section,
+.timeline-section,
+.contact-section {
+  margin-bottom: 2rem;
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.author-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #007bff;
+}
+
+.social-links a {
+  margin-right: 10px;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+.values-grid {
+  display: flex;
+  gap: 1rem;
+}
+
+.value-card {
+  flex: 1;
+  padding: 1rem;
+  text-align: center;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  font-weight: bold;
+}
+
+.timeline-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.timeline-section li {
+  margin: 8px 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+.timeline-section li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: green;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-section input,
+.contact-section textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.contact-section button {
+  padding: 0.8rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.contact-section button:hover {
+  background: #0056b3;
+}
+
+
+
+/* Read More for extra content page */
+.card-extra {
+  margin-top: 10px;
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.read-more-btn {
+  margin-top: 10px;
+  padding: 6px 12px;
+  background-color: #0077ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.read-more-btn:hover {
+  background-color: #005ecc;
+}
