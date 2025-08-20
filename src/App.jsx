@@ -18,6 +18,7 @@ export default function App() {
         <Route path="/travel" element={<Travel />} />
         <Route path="/lifestyle" element={<Lifestyle />} />
         <Route path="/about" element={<About />} />
+        <Route path="/" element={ <Home/>}/>
       </Routes>
     </>
   );

@@ -1,7 +1,8 @@
-import { useParams } from "react-router-dom";
+import { useParams ,Link} from "react-router-dom";
 
 export default function TechDetail() {
   const { id } = useParams();
+
 
   // Normally this comes from API, for now hardcode:
   const items = [
@@ -116,17 +117,42 @@ export default function TechDetail() {
 }
   ];
 
-  const item = items.find(it => it.id === Number(id));
+  const item = items.find((it) => it.id === Number(id));
+  if (!item) return <h2 className="text-center mt-5">Item not found</h2>;
 
-  if (!item) return <h2>Blog not found</h2>;
-
-  return (  
+ return (
     <section className="detail-page">
-      <div className="wrapper">
-        <h2>{item.title}</h2>
-        <img src={item.image} alt={item.title} style={{ maxWidth: "500px" }} />
-        <p><strong>Price:</strong> {item.price}</p>
-        <p>{item.extra}</p>
+      <div style={{ display: "flex", minHeight: "80vh" }}>
+        
+        {/* Left Column (Image) */}
+        <div style={{ flex: "1", padding: "20px" }}>
+          <img 
+            src={item.image} 
+            alt={item.title} 
+            style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: "10px" }}
+          />
+        </div>
+
+        {/* Right Column (Content) */}
+        <div style={{ flex: "1", padding: "20px", display: "flex", flexDirection: "column", justifyContent: "center" }}>
+          <h2>{item.title}</h2>
+          <p><strong>Price:</strong> {item.price}</p>
+          <p>{item.extra}</p>
+
+          <Link to="/" style={{
+            display: "inline-block",
+            marginTop: "20px",
+            padding: "10px 20px",
+            background: "#007bff",
+            color: "#fff",
+            borderRadius: "5px",
+            textDecoration: "none",
+            width: "fit-content"
+          }}>
+            ← Back to Home
+          </Link>
+        </div>
+
       </div>
     </section>
   );
