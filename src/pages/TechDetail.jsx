@@ -10,7 +10,8 @@ export default function TechDetail() {
       title: "React Tips & Patterns",
       image: "https://thumbs.dreamstime.com/b/react-js-inscription-against-laptop-code-background-learn-react-programming-language-computer-courses-training-react-js-202008646.jpg",
       price: "₹299",
-      extra: "React uses a virtual DOM, supports hooks, and is widely used to build fast, interactive SPAs. Companies like Facebook and Instagram use React extensively.",
+      extra: "React is a powerful library that uses a virtual DOM for fast updates and rendering. It allows developers to break UI into reusable components, making projects easier to maintain. Hooks like useState and useEffect simplify state and lifecycle management.\n\nReact’s ecosystem includes tools like React Router, Redux, and Next.js, which enhance functionality for routing, state management, and server-side rendering.\n\n• Write reusable UI components.\n• Use hooks for clean state management.\n• Improve SEO with Next.js and server-side rendering."
+,
     },
     {
       id: 2,
@@ -18,7 +19,8 @@ export default function TechDetail() {
       title: "JavaScript Mastery",
       description: "Modern JS features, async patterns, and best practices you’ll actually use.",
       price: "₹249",
-      extra: "Covers ES6+, promises, async/await, closures, and real-world project patterns for mastering JavaScript deeply."
+      extra: "JavaScript ES6+ introduces modern syntax like arrow functions, template literals, and promises. These features make code more readable and easier to maintain while supporting asynchronous programming.\n\nAsync/await helps handle API calls seamlessly, and modules allow for clean code organization. Mastering these features makes your applications faster and scalable.\n\n• Use let/const instead of var.\n• Learn async/await for API requests.\n• Break large projects into modules for maintainability."
+
     },
     {
       id: 3,
@@ -26,7 +28,8 @@ export default function TechDetail() {
       title: "Node & APIs",
       description: "Design robust REST APIs with auth, validation, and clean architecture.",
       price: "₹349",
-      extra: "Learn Express.js, JWT authentication, error handling, and best practices to build scalable backend services."
+      extra: "CSS Flexbox and Grid provide modern layout systems for creating responsive designs. Flexbox is ideal for one-dimensional layouts, while Grid handles complex two-dimensional structures with precision.\n\nMedia queries allow developers to adapt designs across devices, ensuring websites are mobile-friendly and accessible to all users.\n\n• Use Flexbox for navigation bars.\n• Apply CSS Grid for complex page layouts.\n• Combine with media queries for full responsiveness."
+
     },
     {
       id: 4,
@@ -34,7 +37,8 @@ export default function TechDetail() {
       title: "UI Performance",
       description: "Measure, profile, and ship fast experiences across devices.",
       price: "₹199",
-      extra: "Optimize Lighthouse scores, lazy-load assets, and implement code-splitting for lightning-fast UIs."
+      extra: "UI performance determines how smooth and fast an application feels to users. Lazy-loading images, minimizing bundle size, and caching static files reduce page load time significantly.\n\nOptimizing for performance not only improves user satisfaction but also boosts SEO rankings, as search engines prioritize faster sites.\n\n• Optimize images with modern formats (WebP/AVIF).\n• Split JavaScript bundles with code-splitting.\n• Monitor with Lighthouse and Web Vitals."
+
     },
     // Travel
 
@@ -44,7 +48,8 @@ export default function TechDetail() {
   title: "Paris in 3 Days",
   description: "Museums, cafés, and hidden streets—your perfect short itinerary.",
   price: "₹499",
-  extra: "Cover essentials like the Eiffel Tower, Louvre, and Montmartre, but also explore local cafés, hidden alleys, and take a sunset Seine cruise for a complete Parisian vibe."
+  extra: "Paris is a dream destination with art, history, and food around every corner. In just 3 days, you can experience iconic landmarks like the Eiffel Tower, the Louvre, and Montmartre.\n\nBeyond the classics, Paris offers cozy cafés, hidden alleys, and breathtaking sunset views along the Seine. A short trip can still feel magical if planned smartly.\n\n• Day 1: Explore Louvre, Notre Dame, and Seine cruise.\n• Day 2: Visit Eiffel Tower, Arc de Triomphe, and Champs-Élysées.\n• Day 3: Montmartre, Sacré-Cœur, and local street cafés."
+
 },
     {
   id: 6,
@@ -52,7 +57,8 @@ export default function TechDetail() {
   title: "Backpacking Himalayas",
   description: "Gear, trails, and safety tips for a breathtaking experience.",
   price: "₹399",
-  extra: "Essential packing lists, acclimatization tips, and route guidance for treks like Manali–Leh and Annapurna. Focus on hydration, permits, and local culture for a safe adventure."
+  extra: "The Himalayas offer one of the most thrilling backpacking experiences in the world. Treks range from beginner-friendly routes to challenging expeditions across high-altitude passes.\n\nProper gear, acclimatization, and planning are essential to enjoy the breathtaking views safely. The journey rewards you with unique cultural experiences and unforgettable landscapes.\n\n• Carry lightweight and waterproof gear.\n• Stay hydrated and acclimatize slowly.\n• Respect local customs and natural surroundings."
+
 },
 {
   id: 7,
@@ -60,7 +66,8 @@ export default function TechDetail() {
   title: "Goa Beach Guide",
   description: "The best beaches, food spots, and budget stays in Goa.",
   price: "₹299",
-  extra: "North Goa for nightlife, South Goa for peace. Try Goan seafood, local shacks, flea markets, and hidden beaches like Butterfly and Cola for a mix of fun and relaxation."
+  extra: "Goa is famous for its sun-kissed beaches, vibrant nightlife, and Portuguese heritage. Beyond the popular spots, Goa hides serene backwaters, spice plantations, and offbeat beaches.\n\nTravelers can enjoy budget-friendly hostels, beach shacks, and authentic Goan cuisine while exploring the lively culture.\n\n• Visit Baga, Anjuna, and Palolem beaches.\n• Try water sports like parasailing and scuba diving.\n• Enjoy seafood thalis and beachside cafés."
+
 },
 {
   id: 8,
@@ -68,7 +75,8 @@ export default function TechDetail() {
   title: "Tokyo on a Budget",
   description: "Sushi, shrines, and savings—do Tokyo without burning cash.",
   price: "₹459",
-  extra: "Stay in capsule hotels, use JR passes, explore free attractions like Senso-ji and Meiji Shrine, and eat at conveyor-belt sushi or 7-Eleven for affordable yet authentic meals."
+  extra: "Tokyo blends modern innovation with ancient traditions, offering travelers unique cultural experiences. Despite its reputation for being expensive, Tokyo can be explored on a budget with careful planning.\n\nStreet food stalls, capsule hotels, and free-entry shrines make it accessible without overspending. Public transport ensures smooth city exploration.\n\n• Visit Senso-ji Temple and Meiji Shrine.\n• Explore Tsukiji Market for budget sushi.\n• Use JR Pass and metro day passes to save money."
+
 },
 {
   id: 9,
@@ -76,7 +84,8 @@ export default function TechDetail() {
   title: "Healthy Habits",
   description: "Simple routines for better sleep, energy, and focus.",
   price: "₹199",
-  extra: "Start mornings with hydration and light movement, follow consistent sleep schedules, and reduce screen time before bed. Small steps build strong, sustainable health routines."
+  extra: "Healthy habits build the foundation for long-term well-being. Good sleep, regular exercise, and mindful eating improve energy and focus.\n\nSimple daily routines like hydration, stretching, and journaling create lasting positive changes for body and mind.\n\n• Drink 8 glasses of water daily.\n• Aim for 7–8 hours of quality sleep.\n• Practice mindfulness or meditation for 10 minutes."
+
 },
 {
   id: 10,
@@ -84,7 +93,8 @@ export default function TechDetail() {
   title: "Minimalist Living",
   description: "Declutter your space and mind—live with intention.",
   price: "₹149",
-  extra: "Adopt the ‘one in, one out’ rule, keep only items that spark joy, and prioritize experiences over possessions. Minimalism reduces stress and improves focus."
+  extra: "Minimalist living focuses on owning less but living more intentionally. By decluttering your space, you gain clarity and reduce stress.\n\nThis lifestyle also emphasizes sustainability and financial freedom, as fewer purchases mean less waste and mindful spending.\n\n• Declutter one room at a time.\n• Donate items you don’t use in 6 months.\n• Prioritize quality over quantity."
+
 },
 {
   id: 11,
@@ -92,7 +102,8 @@ export default function TechDetail() {
   title: "Work-Life Balance",
   description: "Boundaries, breaks, and better planning for calmer days.",
   price: "₹179",
-  extra: "Use time-blocking for focused work, schedule regular breaks, and disconnect digitally after work. Balance fosters productivity while maintaining mental well-being."
+  extra: "Work-life balance is crucial in today’s fast-paced world. Setting boundaries helps reduce burnout and allows you to recharge.\n\nEffective time management ensures productivity without sacrificing personal happiness or family time.\n\n• Schedule daily breaks to refresh your mind.\n• Avoid working beyond office hours.\n• Use planners or apps to manage tasks effectively."
+
 },
 {
   id: 12,
@@ -100,7 +111,8 @@ export default function TechDetail() {
   title: "Home Workouts",
   description: "Stay fit with quick routines—no equipment needed.",
   price: "₹129",
-  extra: "Focus on bodyweight exercises like push-ups, squats, and planks. Follow 20-minute HIIT routines and mix yoga for flexibility. Great for busy lifestyles without gym access."
+  extra: "Home workouts make fitness accessible without expensive equipment. Simple routines using body weight can be just as effective as gym sessions.\n\nConsistency is key, and short daily workouts improve strength, flexibility, and overall health.\n\n• Try push-ups, squats, and planks.\n• Use resistance bands for variety.\n• Set small fitness goals and track progress."
+
 }
   ];
 
