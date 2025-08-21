@@ -1,4 +1,5 @@
 import Card from "../components/Card";
+import { useLocation } from "react-router-dom";
 
 export default function Lifestyle() {
   const items = [
@@ -31,15 +32,26 @@ export default function Lifestyle() {
       price: "₹129"
     }
   ];
+  const query = new URLSearchParams(useLocation().search).get("search")?.toLowerCase();
+  const filtered = query
+    ? items.filter(it =>
+        it.title.toLowerCase().includes(query) ||
+        it.description.toLowerCase().includes(query)
+      )
+    : items;
 
   return (
     <section className="page">
-      <div className="wrapper">
-        <h2 className="page-title">Lifestyle Blogs</h2>
-        <div className="card-grid">
-          {items.map((it, i) => <Card key={i} {...it} />)}
-        </div>
-      </div>
-    </section>
+          <div className="wrapper">
+            <h2 className="page-title">LifeStyle Blogs</h2>
+            <div className="card-grid">
+              {filtered.length > 0
+                ? filtered.map((it) => (
+                    <Card key={it.id} {...it} />
+                  ))
+                : <p>No results found.</p>}
+            </div>
+          </div>
+        </section>
   );
 }

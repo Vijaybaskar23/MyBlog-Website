@@ -4,23 +4,34 @@ import logo from "../assets/logo.png";
 
 
 export default function Navbar() {
-  const [query, setQuery] = useState("");
+  const [search, setSearch] = useState("");
   const navigate = useNavigate();
 
   const handleSearch = (e) => {
     e.preventDefault();
-    const q = query.toLowerCase();
+   
 
-    if (q.includes("react") || q.includes("ai") || q.includes("cloud")) {
-      navigate(`/technology?search=${q}`);
-    } else if (q.includes("travel")) {
-      navigate(`/travel?search=${q}`);
-    } else if (q.includes("lifestyle")) {
-      navigate(`/lifestyle?search=${q}`);
+    if (
+      ["react", "javascript", "node", "ui"].some(word =>
+        search.toLowerCase().includes(word)
+      )
+    ) {
+      navigate(`/technology?search=${search}`);
+    } else if (
+      ["paris", "himalayas", "goa", "tokyo"].some(word =>
+        search.toLowerCase().includes(word)
+      )
+    ) {
+      navigate(`/travel?search=${search}`);
+    } else if (
+      ["healthy", "minimalist", "balance", "workout"].some(word =>
+        search.toLowerCase().includes(word)
+      )
+    ) {
+      navigate(`/lifestyle?search=${search}`);
     } else {
-      navigate(`/notfound?search=${q}`);
+      alert("No matching blog found!");
     }
-    setQuery("");
   };
 
   return (
@@ -34,15 +45,14 @@ export default function Navbar() {
         {/* Right → Search + Links */}
         <div className="right-section">
           <form onSubmit={handleSearch} className="search-form">
-            <input
-              type="text"
-              placeholder="Search..."
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-            />
-            <button type="submit">🔍</button>
-          </form>
-
+        <input
+          type="text"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          placeholder="Search blogs..."
+        />
+        <button type="submit">Search</button>
+      </form>
           <div className="nav-links">
             <Link to="/">Home</Link>
             <Link to="/about">About</Link>

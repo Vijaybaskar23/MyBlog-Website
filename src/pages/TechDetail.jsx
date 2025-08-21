@@ -1,7 +1,16 @@
 import { useParams ,Link} from "react-router-dom";
+import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 
 export default function TechDetail() {
   const { id } = useParams();
+  const [showPopup, setShowPopup] = useState(true);
+
+   useEffect(() => {
+    const timer = setTimeout(() => setShowPopup(false), 3000);
+    return () => clearTimeout(timer);
+  }, []);
+
 
 
   // Normally this comes from API, for now hardcode:
@@ -119,43 +128,94 @@ export default function TechDetail() {
   ];
 
   const item = items.find((it) => it.id === Number(id));
-  if (!item) return <h2 className="text-center mt-5">Item not found</h2>;
+  if (!item)
+    return <h2 className="text-center mt-5">Item not found</h2>;
 
- return (
+
+return (
     <section className="detail-page">
-      <div style={{ display: "flex", minHeight: "80vh" }}>
-        
+      <div className="detail-container">
         {/* Left Column (Image) */}
-        <div style={{ flex: "1", padding: "20px" }}>
-          <img 
-            src={item.image} 
-            alt={item.title} 
-            style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: "10px" }}
-          />
-        </div>
+        <motion.div
+          className="detail-image"
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <img src={item.image} alt={item.title} />
+        </motion.div>
 
         {/* Right Column (Content) */}
-        <div style={{ flex: "1", padding: "20px", display: "flex", flexDirection: "column", justifyContent: "center" }}>
-          <h2>{item.title}</h2>
-          <p><strong>Price:</strong> {item.price}</p>
-          <p>{item.extra}</p>
+        <motion.div
+          className="detail-content"
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <motion.h2
+            initial={{ y: -20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.3 }}
+          >
+            {item.title}
+          </motion.h2>
 
+          <motion.p
+            className="price"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.5 }}
+          >
+            Price: {item.price}
+          </motion.p>
 
-          <Link to="/" style={{
-            display: "inline-block",
-            marginTop: "20px",
-            padding: "10px 20px",
-            background: "#007bff",
-            color: "#fff",
-            borderRadius: "5px",
-            textDecoration: "none",
-            width: "fit-content"
-          }}>
-            ← Back to Home
-          </Link>
-        </div>
+          <motion.p
+            className="extra"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.7 }}
+          >
+            {item.extra}
+          </motion.p>
 
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1 }}
+          >
+            <Link to="/" className="back-btn">
+              ← Back to Home
+            </Link>
+          </motion.div>
+        </motion.div>
       </div>
+
+
+{/* ✅ Welcome Popup */}
+
+{showPopup && (
+  <div className="popup-overlay" onClick={() => setShowPopup(false)}>
+    <motion.div
+      className="popup-box"
+      initial={{ y: -300, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      exit={{ y: -300, opacity: 0 }}
+      transition={{
+        duration: 1.5,            // slow motion
+        ease: "easeOut"           // smooth slide
+      }}
+      onClick={(e) => e.stopPropagation()}
+    >
+      <span className="close-btn" onClick={() => setShowPopup(false)}>
+        &times;
+      </span>
+      <h3>Welcome!</h3>
+      <p>
+        Here are the details for <b>{item.title}</b>.
+      </p>
+    </motion.div>
+  </div>
+)}
     </section>
   );
 }
