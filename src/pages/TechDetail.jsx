@@ -135,6 +135,7 @@ export default function TechDetail() {
 return (
     <section className="detail-page">
       <div className="detail-container">
+        
         {/* Left Column (Image) */}
         <motion.div
           className="detail-image"
@@ -201,8 +202,8 @@ return (
       animate={{ y: 0, opacity: 1 }}
       exit={{ y: -300, opacity: 0 }}
       transition={{
-        duration: 1.5,            // slow motion
-        ease: "easeOut"           // smooth slide
+        duration: 1.5,                // slow motion
+        ease: "easeOut"              // smooth slide
       }}
       onClick={(e) => e.stopPropagation()}
     >
