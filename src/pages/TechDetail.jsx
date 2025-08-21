@@ -5,6 +5,7 @@ export default function TechDetail() {
 
 
   // Normally this comes from API, for now hardcode:
+
   const items = [
     {
       id: 1,
@@ -44,77 +45,77 @@ export default function TechDetail() {
     // Travel
 
     {
-  id: 5,
-  image: "https://travel.usnews.com/dims4/USNEWS/1497d28/2147483647/resize/600x400%5E%3E/crop/600x400/quality/85/format/webp/?url=https%3A%2F%2Ftravel.usnews.com%2Fimages%2FNew_Paris_pic_jw04ZlH.jpg",
-  title: "Paris in 3 Days",
-  description: "Museums, cafés, and hidden streets—your perfect short itinerary.",
-  price: "₹499",
-  extra: "Paris is a dream destination with art, history, and food around every corner. In just 3 days, you can experience iconic landmarks like the Eiffel Tower, the Louvre, and Montmartre.\n\nBeyond the classics, Paris offers cozy cafés, hidden alleys, and breathtaking sunset views along the Seine. A short trip can still feel magical if planned smartly.\n\n• Day 1: Explore Louvre, Notre Dame, and Seine cruise.\n• Day 2: Visit Eiffel Tower, Arc de Triomphe, and Champs-Élysées.\n• Day 3: Montmartre, Sacré-Cœur, and local street cafés."
+      id: 5,
+      image: "https://travel.usnews.com/dims4/USNEWS/1497d28/2147483647/resize/600x400%5E%3E/crop/600x400/quality/85/format/webp/?url=https%3A%2F%2Ftravel.usnews.com%2Fimages%2FNew_Paris_pic_jw04ZlH.jpg",
+      title: "Paris in 3 Days",
+      description: "Museums, cafés, and hidden streets—your perfect short itinerary.",
+      price: "₹499",
+      extra: "Paris is a dream destination with art, history, and food around every corner. In just 3 days, you can experience iconic landmarks like the Eiffel Tower, the Louvre, and Montmartre.\n\nBeyond the classics, Paris offers cozy cafés, hidden alleys, and breathtaking sunset views along the Seine. A short trip can still feel magical if planned smartly.\n\n• Day 1: Explore Louvre, Notre Dame, and Seine cruise.\n• Day 2: Visit Eiffel Tower, Arc de Triomphe, and Champs-Élysées.\n• Day 3: Montmartre, Sacré-Cœur, and local street cafés."
 
-},
+    },
     {
-  id: 6,
-  image: "https://t4.ftcdn.net/jpg/12/65/30/39/360_F_1265303968_GRk67y1DkR3ULXUNkfatMWssFBk5Zlrn.jpg",
-  title: "Backpacking Himalayas",
-  description: "Gear, trails, and safety tips for a breathtaking experience.",
-  price: "₹399",
-  extra: "The Himalayas offer one of the most thrilling backpacking experiences in the world. Treks range from beginner-friendly routes to challenging expeditions across high-altitude passes.\n\nProper gear, acclimatization, and planning are essential to enjoy the breathtaking views safely. The journey rewards you with unique cultural experiences and unforgettable landscapes.\n\n• Carry lightweight and waterproof gear.\n• Stay hydrated and acclimatize slowly.\n• Respect local customs and natural surroundings."
+      id: 6,
+      image: "https://t4.ftcdn.net/jpg/12/65/30/39/360_F_1265303968_GRk67y1DkR3ULXUNkfatMWssFBk5Zlrn.jpg",
+      title: "Backpacking Himalayas",
+      description: "Gear, trails, and safety tips for a breathtaking experience.",
+      price: "₹399",
+      extra: "The Himalayas offer one of the most thrilling backpacking experiences in the world. Treks range from beginner-friendly routes to challenging expeditions across high-altitude passes.\n\nProper gear, acclimatization, and planning are essential to enjoy the breathtaking views safely. The journey rewards you with unique cultural experiences and unforgettable landscapes.\n\n• Carry lightweight and waterproof gear.\n• Stay hydrated and acclimatize slowly.\n• Respect local customs and natural surroundings."
 
-},
-{
-  id: 7,
-  image: "https://img.traveltriangle.com/blog/wp-content/uploads/2023/03/Hidden-Places-In-Goa.jpg",
-  title: "Goa Beach Guide",
-  description: "The best beaches, food spots, and budget stays in Goa.",
-  price: "₹299",
-  extra: "Goa is famous for its sun-kissed beaches, vibrant nightlife, and Portuguese heritage. Beyond the popular spots, Goa hides serene backwaters, spice plantations, and offbeat beaches.\n\nTravelers can enjoy budget-friendly hostels, beach shacks, and authentic Goan cuisine while exploring the lively culture.\n\n• Visit Baga, Anjuna, and Palolem beaches.\n• Try water sports like parasailing and scuba diving.\n• Enjoy seafood thalis and beachside cafés."
+    },
+    {
+      id: 7,
+      image: "https://img.traveltriangle.com/blog/wp-content/uploads/2023/03/Hidden-Places-In-Goa.jpg",
+      title: "Goa Beach Guide",
+      description: "The best beaches, food spots, and budget stays in Goa.",
+      price: "₹299",
+      extra: "Goa is famous for its sun-kissed beaches, vibrant nightlife, and Portuguese heritage. Beyond the popular spots, Goa hides serene backwaters, spice plantations, and offbeat beaches.\n\nTravelers can enjoy budget-friendly hostels, beach shacks, and authentic Goan cuisine while exploring the lively culture.\n\n• Visit Baga, Anjuna, and Palolem beaches.\n• Try water sports like parasailing and scuba diving.\n• Enjoy seafood thalis and beachside cafés."
 
-},
-{
-  id: 8,
-  image: "https://cdn.realestate.co.jp/app/uploads/2020/06/iStock-1152233837-1020x500.jpg",
-  title: "Tokyo on a Budget",
-  description: "Sushi, shrines, and savings—do Tokyo without burning cash.",
-  price: "₹459",
-  extra: "Tokyo blends modern innovation with ancient traditions, offering travelers unique cultural experiences. Despite its reputation for being expensive, Tokyo can be explored on a budget with careful planning.\n\nStreet food stalls, capsule hotels, and free-entry shrines make it accessible without overspending. Public transport ensures smooth city exploration.\n\n• Visit Senso-ji Temple and Meiji Shrine.\n• Explore Tsukiji Market for budget sushi.\n• Use JR Pass and metro day passes to save money."
+    },
+    {
+      id: 8,
+      image: "https://cdn.realestate.co.jp/app/uploads/2020/06/iStock-1152233837-1020x500.jpg",
+      title: "Tokyo on a Budget",
+      description: "Sushi, shrines, and savings—do Tokyo without burning cash.",
+      price: "₹459",
+      extra: "Tokyo blends modern innovation with ancient traditions, offering travelers unique cultural experiences. Despite its reputation for being expensive, Tokyo can be explored on a budget with careful planning.\n\nStreet food stalls, capsule hotels, and free-entry shrines make it accessible without overspending. Public transport ensures smooth city exploration.\n\n• Visit Senso-ji Temple and Meiji Shrine.\n• Explore Tsukiji Market for budget sushi.\n• Use JR Pass and metro day passes to save money."
 
-},
-{
-  id: 9,
-  image: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=1200&auto=format&fit=crop",
-  title: "Healthy Habits",
-  description: "Simple routines for better sleep, energy, and focus.",
-  price: "₹199",
-  extra: "Healthy habits build the foundation for long-term well-being. Good sleep, regular exercise, and mindful eating improve energy and focus.\n\nSimple daily routines like hydration, stretching, and journaling create lasting positive changes for body and mind.\n\n• Drink 8 glasses of water daily.\n• Aim for 7–8 hours of quality sleep.\n• Practice mindfulness or meditation for 10 minutes."
+    },
+    {
+      id: 9,
+      image: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=1200&auto=format&fit=crop",
+      title: "Healthy Habits",
+      description: "Simple routines for better sleep, energy, and focus.",
+      price: "₹199",
+      extra: "Healthy habits build the foundation for long-term well-being. Good sleep, regular exercise, and mindful eating improve energy and focus.\n\nSimple daily routines like hydration, stretching, and journaling create lasting positive changes for body and mind.\n\n• Drink 8 glasses of water daily.\n• Aim for 7–8 hours of quality sleep.\n• Practice mindfulness or meditation for 10 minutes."
 
-},
-{
-  id: 10,
-  image: "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=1200&auto=format&fit=crop",
-  title: "Minimalist Living",
-  description: "Declutter your space and mind—live with intention.",
-  price: "₹149",
-  extra: "Minimalist living focuses on owning less but living more intentionally. By decluttering your space, you gain clarity and reduce stress.\n\nThis lifestyle also emphasizes sustainability and financial freedom, as fewer purchases mean less waste and mindful spending.\n\n• Declutter one room at a time.\n• Donate items you don’t use in 6 months.\n• Prioritize quality over quantity."
+    },
+    {
+      id: 10,
+      image: "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=1200&auto=format&fit=crop",
+      title: "Minimalist Living",
+      description: "Declutter your space and mind—live with intention.",
+      price: "₹149",
+      extra: "Minimalist living focuses on owning less but living more intentionally. By decluttering your space, you gain clarity and reduce stress.\n\nThis lifestyle also emphasizes sustainability and financial freedom, as fewer purchases mean less waste and mindful spending.\n\n• Declutter one room at a time.\n• Donate items you don’t use in 6 months.\n• Prioritize quality over quantity."
 
-},
-{
-  id: 11,
-  image: "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=1200&auto=format&fit=crop",
-  title: "Work-Life Balance",
-  description: "Boundaries, breaks, and better planning for calmer days.",
-  price: "₹179",
-  extra: "Work-life balance is crucial in today’s fast-paced world. Setting boundaries helps reduce burnout and allows you to recharge.\n\nEffective time management ensures productivity without sacrificing personal happiness or family time.\n\n• Schedule daily breaks to refresh your mind.\n• Avoid working beyond office hours.\n• Use planners or apps to manage tasks effectively."
+    },
+    {
+      id: 11,
+      image: "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=1200&auto=format&fit=crop",
+      title: "Work-Life Balance",
+      description: "Boundaries, breaks, and better planning for calmer days.",
+      price: "₹179",
+      extra: "Work-life balance is crucial in today’s fast-paced world. Setting boundaries helps reduce burnout and allows you to recharge.\n\nEffective time management ensures productivity without sacrificing personal happiness or family time.\n\n• Schedule daily breaks to refresh your mind.\n• Avoid working beyond office hours.\n• Use planners or apps to manage tasks effectively."
 
-},
-{
-  id: 12,
-  image: "https://merachfit.com/cdn/shop/articles/3-3.jpg?v=1704366966&width=2048",
-  title: "Home Workouts",
-  description: "Stay fit with quick routines—no equipment needed.",
-  price: "₹129",
-  extra: "Home workouts make fitness accessible without expensive equipment. Simple routines using body weight can be just as effective as gym sessions.\n\nConsistency is key, and short daily workouts improve strength, flexibility, and overall health.\n\n• Try push-ups, squats, and planks.\n• Use resistance bands for variety.\n• Set small fitness goals and track progress."
+    },
+    {
+      id: 12,
+      image: "https://merachfit.com/cdn/shop/articles/3-3.jpg?v=1704366966&width=2048",
+      title: "Home Workouts",
+      description: "Stay fit with quick routines—no equipment needed.",
+      price: "₹129",
+      extra: "Home workouts make fitness accessible without expensive equipment. Simple routines using body weight can be just as effective as gym sessions.\n\nConsistency is key, and short daily workouts improve strength, flexibility, and overall health.\n\n• Try push-ups, squats, and planks.\n• Use resistance bands for variety.\n• Set small fitness goals and track progress."
 
-}
+    }
   ];
 
   const item = items.find((it) => it.id === Number(id));
@@ -138,6 +139,7 @@ export default function TechDetail() {
           <h2>{item.title}</h2>
           <p><strong>Price:</strong> {item.price}</p>
           <p>{item.extra}</p>
+
 
           <Link to="/" style={{
             display: "inline-block",
