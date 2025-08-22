@@ -46,15 +46,17 @@ export default function Technology() {
     : items;
 
   return (
-    <section className="page">
-      <div className="wrapper">
-        <h2 className="page-title">Technology Blogs</h2>
-        <div className="card-grid">
-          {filtered.length > 0
-            ? filtered.map((it) => (
-                <Card key={it.id} {...it} />
-              ))
-            : <p>No results found.</p>}
+    <section className="technology-page">
+      <div className="overlay">
+        <div className="wrapper">
+          <h2 className="page-title">Technology Blogs</h2>
+          <div className="card-grid">
+            {filtered.length > 0 ? (
+              filtered.map((it) => <Card key={it.id} {...it} />)
+            ) : (
+              <p>No results found.</p>
+            )}
+          </div>
         </div>
       </div>
     </section>

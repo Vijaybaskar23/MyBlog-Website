@@ -55,6 +55,17 @@ export default function Navbar() {
       </form>
           <div className="nav-links">
             <Link to="/">Home</Link>
+
+            {/* ✅ Dropdown Menu */}
+            <div className="dropdown">
+              <button className="dropbtn">Categories ⬇️</button>
+              <div className="dropdown-content">
+                <Link to="/technology">Technology</Link>
+                <Link to="/travel">Travel</Link>
+                <Link to="/lifestyle">Lifestyle</Link>
+              </div>
+            </div>
+
             <Link to="/about">About</Link>
           </div>
         </div>

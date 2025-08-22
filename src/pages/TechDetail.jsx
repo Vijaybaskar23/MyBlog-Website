@@ -135,7 +135,7 @@ export default function TechDetail() {
 return (
     <section className="detail-page">
       <div className="detail-container">
-        
+
         {/* Left Column (Image) */}
         <motion.div
           className="detail-image"
@@ -145,7 +145,7 @@ return (
         >
           <img src={item.image} alt={item.title} />
         </motion.div>
-
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
         {/* Right Column (Content) */}
         <motion.div
           className="detail-content"

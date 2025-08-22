@@ -41,17 +41,19 @@ export default function Lifestyle() {
     : items;
 
   return (
-    <section className="page">
+      <section className="LifeStyle-page">
+        <div className="overlay">
           <div className="wrapper">
             <h2 className="page-title">LifeStyle Blogs</h2>
             <div className="card-grid">
-              {filtered.length > 0
-                ? filtered.map((it) => (
-                    <Card key={it.id} {...it} />
-                  ))
-                : <p>No results found.</p>}
+              {filtered.length > 0 ? (
+                filtered.map((it) => <Card key={it.id} {...it} />)
+              ) : (
+                <p>No results found.</p>
+              )}
             </div>
           </div>
-        </section>
-  );
-}
+        </div>
+      </section>
+    );
+  }

@@ -86,7 +86,9 @@ body {
 /* Links */
 .nav-links {
   display: flex;
-  gap: 20px;
+  align-items: center;
+  justify-content: center;  
+  gap: 30px; 
 }
 
 .nav-links a {
@@ -101,9 +103,11 @@ body {
 
 /* ================= HOME PAGE ================= */
 .home-container {
-  min-height: calc(100vh - 64px);   /* full height minus navbar */
-  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  min-height: calc(100vh - 64px);  
+  background: url("https://png.pngtree.com/background/20210711/original/pngtree-geometric-abstract-background-with-blogs-picture-image_1166618.jpg")
+  no-repeat center center fixed;
   color: #fff;
+  background-size: cover;
   display: grid;
   place-items: center;
 }
@@ -658,3 +662,147 @@ body {
 }
 
 
+
+
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: #333;
+  min-width: 160px;
+  border-radius: 6px;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px 17px;
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background: #444;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* Technology  background  image */
+.technology-page {
+  background: url("https://thor.edu/storage/media/activities/959/img/81102/pec.jpg")
+    no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 40px 0;
+  position: relative;
+}
+
+.overlay {
+  width: 100%;
+  background: rgba(1, 10, 11, 0.342);        /* dark overlay for readability */
+  padding: 40px 20px;
+}
+
+.page-title {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+
+.travel-page {
+  background: url("https://images.pexels.com/photos/2166711/pexels-photo-2166711.jpeg")
+    no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 40px 0;
+  position: relative;
+}
+
+.overlay {
+  width: 100%;
+  background: rgba(1, 10, 11, 0.342);        /* dark overlay for readability */
+  padding: 40px 20px;
+}
+
+.page-title {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+
+
+.LifeStyle-page {
+  background: url("https://png.pngtree.com/thumb_back/fw800/background/20241130/pngtree-modern-chair-in-a-room-complementing-the-interior-design-with-clean-image_16678696.jpg")
+    no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 40px 0;
+  position: relative;
+}
+
+.overlay {
+  width: 100%;
+  background: rgba(1, 10, 11, 0.342);        /* dark overlay for readability */
+  padding: 40px 20px;
+}
+
+.page-title {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
