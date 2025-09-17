@@ -56,7 +56,7 @@ export default function Navbar() {
           <div className="nav-links">
             <Link to="/">Home</Link>
 
-            {/* ✅ Dropdown Menu */}
+            {/*  Dropdown Menu */}
             <div className="dropdown">
               <button className="dropbtn">Categories ⬇️</button>
               <div className="dropdown-content">
